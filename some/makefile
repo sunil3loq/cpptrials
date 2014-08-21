@@ -1,7 +1,7 @@
 exec=result
 codeout=processed.cpp
-flag=g
-files=cdsexone.cpp
+flag=Wall
+files=explinklistone.cpp
 debugcode=ndebug
 prep:
 	cpp -P $(files) > $(codeout)

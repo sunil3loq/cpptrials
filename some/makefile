@@ -1,7 +1,7 @@
 exec=result
 codeout=processed.cpp
 flag=Wall
-files=explinklistone.cpp
+files=vectorex.cpp
 debugcode=ndebug
 prep:
 	cpp -P $(files) > $(codeout)

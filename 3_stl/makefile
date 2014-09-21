@@ -1,7 +1,7 @@
 exec=result
 codeout=processed.cpp
 flag=Wall
-files=classtrytwo.cpp
+files=twoexamp.cpp
 debugcode=ndebug
 prep:
 	cpp -P $(files) > $(codeout)

@@ -1,0 +1,90 @@
+
+git status
+#tells which branch, which are tracked, which are not tracked, which have changed, hints
+
+git add .
+#adds files in . to be tracked
+
+git rm --cached //fn//
+#removes //fn// from being tracked
+
+git commit -m ''
+#commits the files being tracked to the local re
+
+git log
+#gives the log of our commits
+
+#may be local commits
+
+git diff
+#gets you the difference of the files in the git local to the git staging area to which the files are moved when done git add
+
+git log --oneline
+#short log
+
+git status -s
+
+git diff --cached
+#differences in staging area
+
+git remote add <remotereponame> <sshlinktoremoterepo>
+#configures the remote repo through the ssh link to the local git on the name remotereponame
+
+git push <remotereponame> <localbranch>
+#pushes the code in localbranch to the remotereponame
+
+#all repos have a master
+
+git branch
+#tells us all the existing branches in the repor
+
+git branch <newname> 
+#creates a new branch with the name <newname>
+
+git checkout <branchname>
+#switches to the coding <branchname>
+
+git merge <branchname>
+#merges the changes in the <branchname> to the <currentbranch>
+
+#post the merging command refreshing the eclipse will show the changes or conflicts in the file and saving the code with what is required will add to changes
+
+ZZ
+#will get you out of the log
+
+git pull
+#synchonizes the local repor with the remote repo
+
+git pull <remotereponame> <branchname>
+#pulls ths <branchname> from the <remotereponame>
+
+#git merge is visible as commit in log
+
+git fetch
+#downloads the file from the remote in to the temporary branch
+
+git pull
+#helper command that is equivalent to sequence git fetch git merge
+
+.gitignore
+#stores the files that git needs to ignore in the dir
+
+#each line is a file you want to ignore
+#for dir use something like dir/*
+
+git fetch <remotereponame> <remotebranch>:<localbranch>
+#fetches the <remotebranch> to the <localbranch>
+
+git push <remotereponame> :<remotebranch>
+#deletes the <remotebranch> -- could be because we are push nothing in to that remote branch
+
+
+git branch -r
+#gets the list of branches in remote repo
+
+#we cannot delete the master branch. Always merge the code in to master and not edit 
+
+git branch -D <branchname>
+#deletes the <branchname> from the local repo
+
+

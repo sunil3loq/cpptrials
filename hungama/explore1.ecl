@@ -1,16 +1,11 @@
 import std;
+import RecordDefinitions from $;
+import cleanlanguageandgenre from $;
+import python;
+
 string transstr := '~hungama::nov172014::tatadocomo';
 
-transrec := RECORD
-    STRING SongUniqueCode;
-    integer Duration;
-    STRING Circle;
-    STRING Date;
-    STRING MSISDN;
-    STRING DNIS;
-    STRING Mode;
-    STRING businesscategory;
-END;
+transrec := RecordDefinitions.transrec;
 
 transdata := dataset(transstr,transrec,csv(heading(1)));
 
@@ -18,22 +13,7 @@ transdata := dataset(transstr,transrec,csv(heading(1)));
 
 metastr := '~hungama::nov172014::tataendlesscatalogue';
 
-metarec := RECORD
-    STRING SNo;
-    STRING SongUniqueCode;
-    STRING ContentName;
-    STRING AlbumName;
-    STRING ReleaseYear;
-    STRING ReleaseMonth;
-    STRING MalePerformers;
-    STRING FemalePerformers;
-    STRING Lyricist;
-    STRING MusicDirector;
-    STRING MaleSingers;
-    STRING FemaleSingers;
-    STRING Language;
-    STRING Genre;
-END;
+metarec := RecordDefinitions.metarec;
 
 metadata := dataset(metastr,metarec,csv(heading(1)));
 
@@ -89,10 +69,41 @@ disretsigforcust := table(transwithretflag,{msisdn,retornot,sigornot},msisdn,ret
 
 //output(table(transwithretflag,{retornot,sigornot,cnttrans:=count(group)},retornot,sigornot),named('retsiftrans'));
 
-output(sort(table(transdata,{businesscategory},businesscategory),businesscategory),named('distinctbusinesscategories'));
+//output(sort(table(transdata,{businesscategory},businesscategory),businesscategory),named('distinctbusinesscategories'));
 
 output(sort(table(metadata,{genre},genre),genre),named('distinctgenre'));
 
 output(sort(table(metadata,{language},language),language),named('distinctlanguage'));
 
-output(transwithretflag,,'~micromax::hungama::testdata',csv(heading(single)),overwrite);
+//output(transwithretflag,,'~micromax::hungama::testdata',csv(heading(single)),overwrite);
+
+metacleandata := cleanlanguageandgenre().generate(metadata);
+
+output(sort(table(metacleandata,{language},language),language),named('dislanguage'));
+
+output(sort(table(metacleandata,{genre},genre),genre),named('disgenre'));
+
+metadatawithcat := project(metacleandata,transform(recordof(left) or {string category},self.category:=left.language+left.genre;
+							self:=left));
+
+output(sort(table(metadatawithcat,{category},category),category),named('discategory'));
+//distinct songs in category
+transupbcat := project(transwithretflag,transform(recordof(left),
+							self.businesscategory:=std.str.touppercase(left.businesscategory);
+							self:=left));
+
+//join the song info to understand which songs are in a b category
+transleftmeta := join(transupbcat,metadatawithcat,left.songuniquecode=right.songuniquecode,
+			transform(recordof(left) or recordof(right),self:=left;self:=right));
+
+catmap:=sort(table(table(transleftmeta,{businesscategory,songuniquecode,category},businesscategory,songuniquecode,category),
+	{businesscategory,category,cnttrans:=count(group)},businesscategory,category),businesscategory,-cnttrans);
+
+//catmap;
+
+output(transleftmeta,,'~hungama::nov172014::trasactionmetajoin',csv(heading(single),quote('"')),overwrite);
+
+output(sort(table(transleftmeta,{category},category),category),named('discategorylast'));
+
+output(count(transleftmeta),named('join'));
+output(count(transwithretflag),named('trans'));

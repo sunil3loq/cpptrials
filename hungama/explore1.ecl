@@ -86,6 +86,8 @@ output(sort(table(metacleandata,{genre},genre),genre),named('disgenre'));
 metadatawithcat := project(metacleandata,transform(recordof(left) or {string category},self.category:=left.language+left.genre;
 							self:=left));
 
+output(metadatawithcat,,'~hungama::nov172014::metacleandata',csv(heading(single),quote('"')),overwrite);
+
 output(sort(table(metadatawithcat,{category},category),category),named('discategory'));
 //distinct songs in category
 transupbcat := project(transwithretflag,transform(recordof(left),

@@ -78,7 +78,6 @@ git fetch <remotereponame> <remotebranch>:<localbranch>
 git push <remotereponame> :<remotebranch>
 #deletes the <remotebranch> -- could be because we are push nothing in to that remote branch
 
-
 git branch -r
 #gets the list of branches in remote repo
 
@@ -86,5 +85,11 @@ git branch -r
 
 git branch -D <branchname>
 #deletes the <branchname> from the local repo
+
+git remote
+#tells the remote repositories we have configured
+
+git remote -v
+#gives the configured remote repositories along with the urls
 
 

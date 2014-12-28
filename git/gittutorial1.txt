@@ -2,11 +2,17 @@
 git status
 #tells which branch, which are tracked, which are not tracked, which have changed, hints
 
+git status -s
+
 git add .
 #adds files in . to be tracked
 
 git rm --cached //fn//
 #removes //fn// from being tracked
+#to unstage files or directories
+
+git rm <files>
+#removes the <files> from both the working directory and the index or the staging area.
 
 git commit -m ''
 #commits the files being tracked to the local re
@@ -14,18 +20,26 @@ git commit -m ''
 git log
 #gives the log of our commits
 
-#may be local commits
-
-git diff
-#gets you the difference of the files in the git local to the git staging area to which the files are moved when done git add
-
 git log --oneline
 #short log
 
-git status -s
+git diff
+#gets you the difference of the files in the git local to the git staging area to which the files are moved when done git add
+#Show what has changed but hasn't been added to the index yet via git add.
+#Diff between the index and the working directory.
 
-git diff --cached
+git diff --cached or git diff --staging
 #differences in staging area
+#Show what has been added to the index via git add but not yet committed.
+#Diff between HEAD and the index.
+
+git diff HEAD
+#Show what has changed since the last commit.
+#Diff between HEAD and the working directory.
+
+git diff HEAD^
+#Show what has changed since the commit before the latest commit.
+#Diff between the direct ancestor of HEAD and the working directory.
 
 git remote add <remotereponame> <sshlinktoremoterepo>
 #configures the remote repo through the ssh link to the local git on the name remotereponame
@@ -40,6 +54,9 @@ git branch
 
 git branch <newname> 
 #creates a new branch with the name <newname>
+
+git branch -d <branch>
+#deletes the <branch>
 
 git checkout <branchname>
 #switches to the coding <branchname>
@@ -91,5 +108,125 @@ git remote
 
 git remote -v
 #gives the configured remote repositories along with the urls
+
+git checkout <commitnamechecksum> <filename>
+#checksout the <filename> from the old commit <commitnamechecksum>
+#<filename> gets the old version commited and appears in the 'to be commited' header of git status
+
+git checkout HEAD <filename>
+#Ignores the changes made to the file <filename> and checks out the version from the most recent commit
+#HEAD is the commmit name for the most recent commit - a pointer to it
+
+git revert <commit>
+#Generate a new commit that undoes all of the changes introduced in <commit>, then apply it to the current branch.
+#The git revert command undoes a committed snapshot. But, instead of removing the commit from the project history, it figures out how to undo the changes introduced by the commit and appends a new commit with the resulting content.
+
+git reset <file>
+#Remove the specified file from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.
+
+git reset
+#Reset the staging area to match the most recent commit, but leave the working directory unchanged.
+
+git reset --hard
+#Reset the staging area and the working directory to match the most recent commit.
+
+git reset <commit>
+#Move the current branch tip backward to <commit>, reset the staging area to match, but leave the working directory alone.
+
+git reset --hard <commit>
+#Move the current branch tip backward to <commit> and reset both the staging area and the working directory to match.
+
+#You should never use git reset <commit> when any snapshots after <commit> have been pushed to a public repository.
+
+git reset --hard HEAD~2
+#The git reset HEAD~2 command moves the current branch backward by two commits, effectively removing the two snapshots we just created from the project history. Remember that this kind of reset should only be used on unpublished commits.
+
+#The git clean command removes untracked files from your working directory.
+
+git clean -n
+#Perform a “dry run” of git clean. This will show you which files are going to be removed without actually doing it.
+
+git clean -f
+#Remove untracked files from the current directory.
+
+git clean -f <path>
+#Remove untracked files, but limit the operation to the specified path.
+
+git clean -df
+#Remove untracked files and untracked directories from the current directory.
+
+git commit --amend
+#Combine the staged changes with the previous commit and replace the previous commit with the resulting snapshot. Running this when there is nothing staged lets you edit the previous commit’s message without altering its snapshot.
+#never amend commits that have been pushed to a public repository.
+
+git commit --amend --no-edit
+#The editor will be populated with the message from the previous commit and including the --no-edit flag will allow you to make the amendment to your commit without changing its commit message. 
+
+git remote add <name> <url>
+#adding a connection to the remote repository on the <url> with the connection name <name>
+
+git remote rm <name>
+#removes the connection to the remote repo with connection <name>
+
+git remote rename <old-name> <new-name>
+#renames the connection from <old-name> to <new-name>
+
+git fetch <remote>
+#Fetch all of the branches from the repository. This also downloads all of the required commits and files from the other repository.
+
+git fetch <remote> <branch>
+#Fetch only <branch> from the <remote>
+#Since fetched content is represented as a remote branch, it has absolutely no effect on your local development work.
+#read-only branches. To view your remote branches, simply pass the -r flag to the git branch command.
+
+git pull <remote>
+#Fetch the specified remote’s copy of the current branch and immediately merge it into the local copy. This is the same as git fetch <remote> followed by git merge origin/<current-branch>.
+
+git pull --rebase <remote>
+#Same as the above command, but instead of using git merge to integrate the remote branch with the local one, use git rebase
+
+git push <remote> <branch>
+#Push the specified branch to <remote>, along with all of the necessary commits and internal objects. This creates a local branch in the destination repository.
+
+git push <remote> --all
+#Push all of your local branches to the specified remote.
+
+#git push is essentially the same as running git merge master from inside the remote repository.
+
+#Git prevents you from overwriting the central repository’s history by refusing push requests when they result in a non-fast-forward merge. So, if the remote history has diverged from your history, you need to pull the remote branch and merge it into your local one, then try pushing again.
+
+#Rebasing is the process of moving a branch to a new base commit. 
+
+git checkout <commit>
+#Update all files in the working directory to match the specified commit. You can use either a commit hash or a tag as the <commit> argument. This will put you in a detached HEAD state.git checkout <commit>
+
+git rebase <base>
+#Rebase the current branch onto <base>, which can be any kind of commit reference - an ID, a branch name, a tag, or a relative reference to HEAD
+#Rebasing is the process of moving a branch to a new base commit.
+
+git branch -m <branch>
+#Rename the current branch to <branch>
+
+#Git stores a branch as a reference to a commit. In this sense, a branch represents the tip of a series of commits—it's not a container for commits. The history for a branch is extrapolated through the commit relationships.
+
+#branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer
+
+git branch -D crazy-experiment
+#This deletes the branch regardless of its status and without warnings
+
+git checkout <existing-branch>
+#This makes <existing-branch> the current branch, and updates the working directory to match.
+
+git checkout -b <new-branch>
+#Create and check out <new-branch>.
+
+git checkout -b <new-branch> <existing-branch>
+#Same as the above invocation, but base the new branch off of <existing-branch> instead of the current branch
+
+git rebase --continue
+#In a rebase done on the multiple commits to integrate, --continue is useful to move to next commit to integrate.
+
+git rebase --abort
+#Useful to halt and abort the complete rebase process
 
 

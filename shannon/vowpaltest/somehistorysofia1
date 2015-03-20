@@ -1,0 +1,1000 @@
+ 1143  sudo apt-get download
+ 1144  sudo apt-get update
+ 1145  cat dependencies.txt | sudo apt-get download
+ 1146  sudo apt-get download < dependencies.txt
+ 1147  cat dependencies.txt
+ 1148  sudo apt-get download xubuntu-desktop 
+ 1149  sudo apt-get download gnome-desktop-data gnome-icon-theme-full gnome-system-tools gnome-themes-standard gnome-themes-standard-data gnumeric gnumeric-common gnumeric-doc gstreamer1.0-libav gtk-theme-config gtk2-engines-pixbuf libavcodec54 libavformat54 libavutil52 libbabl-0.1-0 libcairo-perl libchamplain-0.12-0 libchamplain-gtk-0.12-0 libdigest-crc-perl libgdome2-0 libgdome2-cpp-smart0c2a libgegl-0.2-0 libglib-perl libgoffice-0.10-10 libgoffice-0.10-10-common libgsf-1-114 libgsf-1-common libgsm1 libgstreamer-perl libgtk2-notify-perl libgtk2-perl libgtk2-trayicon-perl libgtkmathview0c2a libgtksourceview2.0-0 libgtksourceview2.0-common libgtkspell0 libilmbase6 libintl-perl libjavascriptcoregtk-1.0-0 libjpeg-progs libjpeg-turbo-progs libkeybinder0 liblink-grammar4 libloudmouth1-0 libmng2 libmp3lame0 libnet-dbus-perl liboobs-1-5 libopenexr6 libopenjpeg2 libopus0 libotr5 libots0 libpango-perl libschroedinger-1.0-0 libsdl1.2debian libsexy2 libtagc0 libtidy-0.99-0 libtie-ixhash-perl libunique-1.0-0 libva1 libwebkitgtk-1.0-0 libwebkitgtk-1.0-common libwv-1.2-4 libx264-142 libxfce4ui-utils libxfcegui4-4 libxml-twig-perl libxml-xpathengine-perl libxvidcore4 light-locker light-locker-settings lightdm-gtk-greeter link-grammar-dictionaries-en menulibre mousepad mugshot orage parole pastebinit pavucontrol pidgin pidgin-data pidgin-libnotify pidgin-otr plymouth-theme-xubuntu-logo plymouth-theme-xubuntu-text python-psutil python3-pexpect python3-psutil ristretto shimmer-themes system-tools-backends thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xbrlapi xchat xchat-common xchat-indicator xfburn xfce4-appfinder xfce4-cpugraph-plugin xfce4-dict xfce4-indicator-plugin xfce4-mailwatch-plugin xfce4-netload-plugin xfce4-notes xfce4-notes-plugin xfce4-notifyd xfce4-panel xfce4-places-plugin xfce4-power-manager xfce4-power-manager-data xfce4-quicklauncher-plugin xfce4-screenshooter xfce4-session xfce4-settings xfce4-systemload-plugin xfce4-taskmanager xfce4-terminal xfce4-verve-plugin xfce4-volumed xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin xfwm4 xscreensaver xscreensaver-data xubuntu-artwork xubuntu-community-wallpapers xubuntu-default-settings xubuntu-desktop xubuntu-docs xubuntu-icon-theme xubuntu-wallpapers
+ 1150  ls
+ 1151  mkdir xfce
+ 1152  mv *.deb xfce/
+ 1153  ls
+ 1154  cp xfce/ /media/loq/27AC-CE1E/
+ 1155  cp -r xfce/ /media/loq/27AC-CE1E/
+ 1156  sync
+ 1157  sudo apt-get install mplayer
+ 1158  gedit 
+ 1159  ls
+ 1160  mkdir lokesh_shannon
+ 1161  cd lokesh_shannon/
+ 1162  ls
+ 1163  emacs -nw
+ 1164  python
+ 1165  cd /media/loq/27AC-CE1E/
+ 1166  cd poc
+ 1167  ls
+ 1168  cp rowToCol.ecl ~/
+ 1169  cp config.g ~/
+ 1170  cd 
+ 1171  ls
+ 1172  cd -
+ 1173  cp createRowToColumnCdoe.py ~/
+ 1174  cd -
+ 1175  python createRowToColumnCdoe.py config.g 
+ 1176  ls
+ 1177  less rowToCol.ecl 
+ 1178  cp rowToCol.ecl /media/loq/27AC-CE1E/
+ 1179  cp RecordDefinitions.ecl /media/loq/27AC-CE1E/
+ 1180  cp rowToCol.ecl /media/loq/27AC-CE1E/
+ 1181  sync
+ 1182  sudo apt-get
+ 1183  sudo apt-get -d libboost-dev
+ 1184  sudo apt-get download libboost-dev
+ 1185  sudo apt-get download libboost-system-dev
+ 1186  sudo apt-get download libboost-thread-dev
+ 1187  sudo apt-get download libboost-filesystem-dev
+ 1188  sudo apt-get download libboost-filesystem1.54-dev
+ 1189  ls
+ 1190  cp libboost-* /media/loq/27AC-CE1E/
+ 1191  sync
+ 1192  cp ~/Downloads/libboost-* /media/loq/27AC-CE1E/
+ 1193  sync
+ 1194  sudo apt-get download libboost1.54-dev 
+ 1195  cp libboost1.54-dev_1.54.0-4ubuntu3.1_amd64.deb /media/loq/27AC-CE1E/
+ 1196  sync
+ 1197  ls
+ 1198  rm libboost*
+ 1199  y
+ 1200  ls
+ 1201  cd Downloads/
+ 1202  ls
+ 1203  rm libboost-*
+ 1204  ls
+ 1205  rm hpccsystems-platform_community-4.2.8-1precise_amd64.deb 
+ 1206  rm hpccsystems-graphcontrol_community-5.0.2-1saucy_amd64.deb 
+ 1207  ls
+ 1208  sudo apt-get download libboost*
+ 1209  sudo apt-get download libboost1.54-*
+ 1210  sudo apt-get download libboost-
+ 1211  sudo apt-get download libboost-*1.54*
+ 1212  sudo apt-get download libboost-.1.54*
+ 1213  sudo apt-get download libboost-.*1.54*
+ 1214  sudo apt-get download 'libboost-.*1\.54*'
+ 1215  sudo apt-get download 'libboost-.*1.54*'
+ 1216  sudo apt-get download 'libboost-.*1\.54*' -m
+ 1217  sudo apt-get download 'libboost-.*1\.54*' --ignore-mmissing
+ 1218  sudo apt-get download 'libboost-.*1\.54*' --ignore-missing
+ 1219  sudo apt-get download 'libboost-.*1.54'
+ 1220  ls
+ 1221  mkdir libboost
+ 1222  mv libboost* libboost/
+ 1223  rm libboost/
+ 1224  ls
+ 1225  cd libboost/
+ 1226  ls
+ 1227  cd ..
+ 1228  ls
+ 1229  cp -r libboost/ /media/loq/27AC-CE1E/
+ 1230  sync
+ 1231  cd libboost/
+ 1232  ls
+ 1233  cd ..
+ 1234  rm -rf libboost/
+ 1235  sudo apt-get download libboost
+ 1236  vw
+ 1237  ls
+ 1238  cd sunil/
+ 1239  ls
+ 1240  mkdir gitrepos
+ 1241  cd gitrepos/
+ 1242  git clone https://github.com/JohnLangford/vowpal_wabbit.wiki.git
+ 1243  git clone https://github.com/JohnLangford/vowpal_wabbit.git
+ 1244  ls
+ 1245  cd vowpal_wabbit
+ 1246  ls
+ 1247  vw
+ 1248  ls
+ 1249  cd ~/sunil/
+ 1250  ls
+ 1251  cd carbadbuydata/
+ 1252  ls
+ 1253  #vw -f data.model -d 
+ 1254  head example_entry.csv 
+ 1255  head house_dataset 
+ 1256  vw -f data.model -d house_dataset 
+ 1257  vw -t house_dataset -i data.model -p test.pred
+ 1258  head house_dataset 
+ 1259  cd ..
+ 1260  cd housingdata/
+ 1261  ls
+ 1262  head housing.
+ 1263  head housing.data 
+ 1264  head housing.names 
+ 1265  hhead Index 
+ 1266  ls
+ 1267  head housing.
+ 1268  head housing.data 
+ 1269  head housing.names 
+ 1270  less housing.names 
+ 1271  less housing.data 
+ 1272  pwd
+ 1273  14
+ 1274  wc -l housing.data 
+ 1275  less housing.data 
+ 1276  less housing.names 
+ 1277  ls
+ 1278  head housingvw.csv 
+ 1279  ls
+ 1280  cd ..
+ 1281  ls
+ 1282  cd gitrepos/
+ 1283  ls
+ 1284  cd ..
+ 1285  ls
+ 1286  cd hdfc/
+ 1287  ls
+ 1288  vim getdistinct.py
+ 1289  ls
+ 1290  head  ../feb15/vowpaltest/csvtovowpal.py 
+ 1291  cp  ../feb15/vowpaltest/csvtovowpal.py ./
+ 1292  ls
+ 1293  vim csvtovowpal.py 
+ 1294  vim getdistinct.py 
+ 1295  vim csvtovowpal.py 
+ 1296  ls
+ 1297  cd sunil/
+ 1298  ls
+ 1299  cd hdfc/
+ 1300  ls
+ 1301  cd ..
+ 1302  ls
+ 1303  cd carbadbuydata/
+ 1304  ls
+ 1305  cd ..
+ 1306  ;ls
+ 1307  ls
+ 1308  cd feb15/
+ 1309  ls
+ 1310  cd phraug2/
+ 1311  ls
+ 1312  vim csv2vw.py 
+ 1313  python csv2vw.py -h
+ 1314  ls ../../carbadbuydata/testsmallcontonlyvw.csv 
+ 1315  head ../../carbadbuydata/testsmallcontonlyvw.csv 
+ 1316  head ../../carbadbuydata/trainingsmallcontonlyvw.csv 
+ 1317  head ../../carbadbuydata/training.csv 
+ 1318  head ../../carbadbuydata/test.csv 
+ 1319  wc-l ../../carbadbuydata/training.csv 
+ 1320  wc -l ../../carbadbuydata/training.csv 
+ 1321  ls
+ 1322  python split.py -h
+ 1323  python split.py /home/loq/sunil/carbadbuydata/trainingsmallcontonlyvw.csv /home/loq/sunil/carbadbuydata/sponesmallcontonlyvw.csv /home/loq/sunil/carbadbuydata/sptwosmallcontonlyvw.csv -p 0.7
+ 1324  wc -l /home/loq/sunil/carbadbuydata/*csv
+ 1325  ls
+ 1326  cd /home/loq/sunil/carbadbuydata/
+ 1327  ls
+ 1328  head sp*
+ 1329  vw --cache_file train.cache -f data.model --compressed sponesmallcontonlyvw.csv 
+ 1330  sudo apt-get install libboost-program-options-dev
+ 1331  cd ..
+ 1332  cd gitrepos/
+ 1333  ls
+ 1334  cd vowpal_wabbit
+ 1335  ls
+ 1336  make
+ 1337  make test
+ 1338  cd ../../carbadbuydata/
+ 1339  vw --cache_file train.cache -f data.model --compressed sponesmallcontonlyvw.csv 
+ 1340  sudo make install
+ 1341  cd ../gitrepos/vowpal_wabbit/
+ 1342  sudo make install
+ 1343  cd -
+ 1344  vw --cache_file train.cache -f data.model --compressed sponesmallcontonlyvw.csv 
+ 1345  head sponesmallcontonlyvw.csv 
+ 1346  vim house_dataset
+ 1347  vw house_dataset 
+ 1348  head house_dataset 
+ 1349  0 | price:.23 sqft:.25 age:.05 2006
+ 1350  1 2 'second_house | price:.18 sqft:.15 age:.35 1976
+ 1351  0 1 0.5 'third_house | price:.53 sqft:.32 age:.87 1924
+ 1352  0 | price:.23 sqft:.25 age:.05 2006
+ 1353  1 2 'second_house | price:.18 sqft:.15 age:.35 1976
+ 1354  0 1 0.5 'third_house | price:.53 sqft:.32 age:.87 1924
+ 1355  1 2 'second_house | price:.18 sqft:.15 age:.35 1976
+ 1356  0 1 0.5 'third_house | price:.53 sqft:.32 age:.87 1924
+ 1357  cd ..
+ 1358  ls
+ 1359  cd gitrepos/
+ 1360  ls
+ 1361  svn checkout http://sofia-ml.googlecode.com/svn/trunk/ sofia-ml-read-only
+ 1362  sudo apt-get install subversion
+ 1363  svn checkout http://sofia-ml.googlecode.com/svn/trunk/ sofia-ml-read-only
+ 1364  ls
+ 1365  git clone https://github.com/zygmuntz/sofia-ml-mod.git
+ 1366  ls
+ 1367  cd sofia-ml-
+ 1368  cd sofia-ml-read-only/
+ 1369  ls
+ 1370  cd sofia-ml/
+ 1371  ls
+ 1372  cd cluster-src/
+ 1373  ls
+ 1374  make
+ 1375  ls ../sofia-kmeans
+ 1376  cd ..
+ 1377  ls
+ 1378  cd ..
+ 1379  ls
+ 1380  cd sofia-ml/
+ 1381  ls
+ 1382  ./sofia-kmeans 
+ 1383  ls
+ 1384  cd cluster-src/
+ 1385  ls
+ 1386  cd ..
+ 1387  ls
+ 1388  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 1389  # Should display the following.
+ 1390  ls
+ 1391  cd cluster-src/
+ 1392  ls
+ 1393  cd ..
+ 1394  ls
+ 1395  ./sofia-kmeans 
+ 1396  ls
+ 1397  ./sofia-kmeans 
+ 1398  ls
+ 1399  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 1400  ./sofia-kmeans --model_in demo/clusters.txt --test_file demo/demo.test --objective_on_test --cluster_assignments_out demo/assignments.txt
+ 1401  head demo/clusters.txt 
+ 1402  head -5 demo/assignments.txt 
+ 1403  ./sofia-kmeans --model_in demo/clusters.txt --test_file demo/demo.test --cluster_mapping_out demo/mapped_test_data.txt --cluster_mapping_type rbf_kernel --cluster_mapping_param 0.001
+ 1404  head -4 demo/mapped_test_data.txt 
+ 1405  cd ..
+ 1406  cd -
+ 1407  ls
+ 1408  cd ../..
+ 1409  ls
+ 1410  cd vowpal_wabbit
+ 1411  ls
+ 1412  cd ..
+ 1413  ls
+ 1414  cd ..
+ 1415  ls
+ 1416  cd feb15/
+ 1417  ls
+ 1418  cd phraug2/
+ 1419  ls
+ 1420  #python csv2vw.py /home/loq/sunil/housingdata/housing.data /home/loq/sunil/housingdata/housingvw.csv 
+ 1421  python csv2vw.py -h
+ 1422  python csv2vw.py /home/loq/sunil/housingdata/housing.data /home/loq/sunil/housingdata/housingvw.csv -l 13 
+ 1423  #python csv2vw.py /home/loq/sunil/housingdata/housing.data /home/loq/sunil/housingdata/housingvw.csv -l 13 
+ 1424  python csv2vw.py /home/loq/sunil/housingdata/housing.csv /home/loq/sunil/housingdata/housingvw.csv -l 13 
+ 1425  cd gitRepos/
+ 1426  ls
+ 1427  cd //
+ 1428  cd 
+ 1429  cd sunil/gitrepos/
+ 1430  ls
+ 1431  cd ..
+ 1432  ls
+ 1433  cd ..
+ 1434  ls
+ 1435  cd gitRepos/
+ 1436  ls
+ 1437  git clone https://github.com/3LOQ/Shannon.git
+ 1438  ls
+ 1439  cd Shannon/
+ 1440  ls
+ 1441  head dataRecordDefinitions.ecl 
+ 1442  ls
+ 1443  cd Utils/
+ 1444  ls
+ 1445  cd ..
+ 1446  git clone https://github.com/3LOQ/ShannonData.git
+ 1447  ls
+ 1448  cd Shannon
+ 1449  cd ..
+ 1450  cd ShannonData/
+ 1451  ls
+ 1452  cd POC2_FEB2015/
+ 1453  ls
+ 1454  cd DatasetInformation/
+ 1455  ls
+ 1456  cd ..
+ 1457  ls
+ 1458  cd Transaction\ Categorization/
+ 1459  ls
+ 1460  ls *csv
+ 1461  cp *csv /var/lib/HPCCSystems/mydropzone/
+ 1462  ls
+ 1463  vim bigrams.
+ 1464  vim bigrams.csv 
+ 1465  cp *csv /var/lib/HPCCSystems/mydropzone/
+ 1466  ls
+ 1467  cd ..
+ 1468  ls
+ 1469  cd vw/
+ 1470  ls
+ 1471  cp -r ~/sunil/gitrepos/vowpal_wabbit* ./
+ 1472  ls
+ 1473  cd
+ 1474  ls
+ 1475  cd 
+ 1476  cd /mnt/
+ 1477  ls
+ 1478  cd ..
+ 1479  cd media/
+ 1480  ls
+ 1481  cd loq/
+ 1482  ls
+ 1483  cd UUI/
+ 1484  ls
+ 1485  cd gitrepos/
+ 1486  ls
+ 1487  git clone https://github.com/JohnLangford/vowpal_wabbit.git
+ 1488  ls
+ 1489  ls
+ 1490  cd sunil/
+ 1491  ls
+ 1492  cd feb15/
+ 1493  ls
+ 1494  cd vowpaltest/
+ 1495  ls
+ 1496  vim csvtovowpal.py 
+ 1497  nano csvtovowpal.py 
+ 1498  vim csvtovowpal.py 
+ 1499  ls
+ 1500  python csvtovowpal.py -h
+ 1501  ls
+ 1502  python samplecols.py ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1503  python csvtovowpal.py -h
+ 1504  python samplecols.py ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1505  python csvtovowpal.py -h
+ 1506  vim csvtovowpal.py 
+ 1507  ls
+ 1508  vim samplecols.py 
+ 1509  vim cutcols.py
+ 1510  cp samplecols.py selectcols.py
+ 1511  vim headindex.py
+ 1512  vim csvtovowpal.py 
+ 1513  vim headindex.py
+ 1514  vim csvtovowpal.py 
+ 1515  vim headindex.py
+ 1516  python csvtovowpal.py -h
+ 1517  vw
+ 1518  vw -h
+ 1519  vw --version
+ 1520  vw -a -d vwtrain.csv -f check.model
+ 1521  vw-varinfo
+ 1522  vw-varinfo vwtrain.csv 
+ 1523  ls
+ 1524  vw -h
+ 1525  vw -h | less
+ 1526  vw -h | grep svm
+ 1527  vw -h | grep tree
+ 1528  vw -h | grep nips
+ 1529  vw -h 
+ 1530  vw -h | less
+ 1531  python csvtovowpal.py -h
+ 1532  #python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1533  head ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1534  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1535  python csvtovowpal.py -h
+ 1536  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1537  head vwtrain.csv 
+ 1538  head ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1539  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1540  head vwtrain.csv 
+ 1541  head ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1542  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1543  python
+ 1544  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1545  head vwtrain.csv 
+ 1546  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1547  head vwtrain.csv 
+ 1548  head -2 vwtrain.csv 
+ 1549  head -3 ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1550  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1551  head -2 vwtrain.csv 
+ 1552  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv
+ 1553  head -2 vwtrain.csv 
+ 1554  head -3 ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1555  ls
+ 1556  python headindex.py ~/sunil/carbadbuydata/trainingsmall.csv
+ 1557  vim headindex.py 
+ 1558  python headindex.py 
+ 1559  vim headindex.py 
+ 1560  python headindex.py 
+ 1561  ls ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1562  python headindex.py 
+ 1563  vim headindex.py 
+ 1564  python headindex.py 
+ 1565  vim headindex.py 
+ 1566  python headindex.py 
+ 1567  head -2 vwtrain.csv 
+ 1568  #python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -
+ 1569  #python csvtovowpal.py -h
+ 1570  python csvtovowpal.py -h
+ 1571  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28
+ 1572  head -2 vwtrain.csv 
+ 1573  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns
+ 1574  head -2 vwtrain.csv 
+ 1575  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns
+ 1576  head -2 vwtrain.csv 
+ 1577  python csvtovowpal.py -h
+ 1578  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8
+ 1579  head -2 vwtrain.csv 
+ 1580  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8
+ 1581  head -2 vwtrain.csv 
+ 1582  python csvtovowpal.py -h
+ 1583  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1584  head -2 vwtrain.csv 
+ 1585  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1586  head -2 vwtrain.csv 
+ 1587  python csvtovowpal.py -h
+ 1588  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -z
+ 1589  head -2 vwtrain.csv 
+ 1590  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1591  head -2 vwtrain.csv 
+ 1592  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1593  head -2 vwtrain.csv 
+ 1594  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1595  head -2 vwtrain.csv 
+ 1596  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1597  head -2 vwtrain.csv 
+ 1598  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1599  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3l
+ 1600  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1601  head -2 vwtrain.csv 
+ 1602  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1603  head -2 vwtrain.csv 
+ 1604  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1605  head -2 vwtrain.csv 
+ 1606  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1607  head -2 vwtrain.csv 
+ 1608  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1609  head -2 vwtrain.csv 
+ 1610  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1611  wc -l vwtrain.csv 
+ 1612  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -s
+ 1613  wc -l vwtrain.csv 
+ 1614  head -2 vwtrain.csv 
+ 1615  python
+ 1616  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -s
+ 1617  head -2 vwtrain.csv 
+ 1618  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -s
+ 1619  head -2 vwtrain.csv 
+ 1620  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -t 8 -imp 3 -s
+ 1621  head -2 vwtrain.csv 
+ 1622  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1623  ls
+ 1624  vim headindex.py 
+ 1625  cp headindex.py samplecols.py
+ 1626  vim samplecols.py 
+ 1627  vim headindex.py 
+ 1628  vim samplecols.py 
+ 1629  vim headindex.py 
+ 1630  vim samplecols.py 
+ 1631  python samplecols.py -h
+ 1632  ls
+ 1633  vim samplecols.py 
+ 1634  python samplecols.py -h
+ 1635  vim samplecols.py 
+ 1636  vim headindex.py 
+ 1637  vim samplecols.py 
+ 1638  python samplecols.py -h
+ 1639  vim samplecols.py 
+ 1640  python samplecols.py -h
+ 1641  vim samplecols.py 
+ 1642  python samplecols.py -h
+ 1643  vim samplecols.py 
+ 1644  python samplecols.py -h
+ 1645  vim samplecols.py 
+ 1646  python samplecols.py -h
+ 1647  python samplecols.py ~/sunil/carbadbuydata/training.csv 
+ 1648  vim samplecols.py 
+ 1649  python samplecols.py ~/sunil/carbadbuydata/training.csv 
+ 1650  vim samplecols.py 
+ 1651  python samplecols.py ~/sunil/carbadbuydata/training.csv 
+ 1652  vim samplecols.py 
+ 1653  python samplecols.py ~/sunil/carbadbuydata/training.csv 
+ 1654  vim samplecols.py 
+ 1655  python samplecols.py ~/sunil/carbadbuydata/training.csv 
+ 1656  ls
+ 1657  python samplecols.py -h | vi
+ 1658  python samplecols.py -h | less
+ 1659  ls
+ 1660  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3
+ 1661  head vwtrain.csv 
+ 1662  head -2 vwtrain.csv 
+ 1663  head vwtrain.csv 
+ 1664  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8
+ 1665  head -2 vwtrain.csv 
+ 1666  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -l 1 -uh 0
+ 1667  head -2 vwtrain.csv 
+ 1668  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -l 1 -uh 0
+ 1669  head -2 vwtrain.csv 
+ 1670  cp csvtovowpal.py /media/loq/UUI/vw/
+ 1671  vw
+ 1672  ls
+ 1673  python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -l 1 
+ 1674  head -2 vwtrain.csv 
+ 1675  ls
+ 1676  cd ..
+ 1677  ls
+ 1678  cd ph`
+ 1679  cd phraug2/
+ 1680  ls
+ 1681  python csv2libsvm.py -h
+ 1682  cp csv2libsvm.py ../vowpaltest/
+ 1683  cd ../vowpaltest/
+ 1684  python csv2libsvm.py ~/sunil/carbadbuydata/trainingsmall.csv libsvmtrain.csv -s -l=0
+ 1685  ls
+ 1686  vim headindex.py
+ 1687  vim selectcols.py 
+ 1688  python selectcols.py 
+ 1689  ls
+ 1690  python samplecols.py ~/sunil/carbadbuydata/trainingsmall.csv 
+ 1691  python selectcols.py ~/sunil/carbadbuydata/trainingsmall.csv train.csv 2,4,5,6,7,8,9,10,11,12,13,14,15,24,25,27,28 -r=1
+ 1692  python selectcols.py ~/sunil/carbadbuydata/trainingsmall.csv train.csv 2,4,5,6,7,8,9,10,11,12,13,14,15,24,25,27,28 -r
+ 1693  vim selectcols.py 
+ 1694  python selectcols.py ~/sunil/carbadbuydata/trainingsmall.csv train.csv 2,4,5,6,7,8,9,10,11,12,13,14,15,24,25,27,28 -r
+ 1695  head train.csv 
+ 1696  ls
+ 1697  python csv2libsvm.py -h
+ 1698  head train.csv 
+ 1699  python csv2libsvm.py train.csv svmtrain.csv -l=0 -s
+ 1700  ls
+ 1701  head train.csv > trainsmall.csv
+ 1702  python csv2libsvm.py trainsmall.csv svmtrain.csv -l=0 -s
+ 1703  head svmtrain.csv 
+ 1704  ls
+ 1705  cd ..
+ 1706  cp installationvw /media/loq/UUI/vw/
+ 1707  cp Installation.zip /media/loq/UUI/vw/
+ 1708  ls
+ 1709  cd gitrepos/
+ 1710  ls
+ 1711  cd..
+ 1712  cd ..
+ 1713  cd feb15/
+ 1714  ls
+ 1715  cd vowpaltest/
+ 1716  ls
+ 1717  python samplecols.py -h
+ 1718  vim csv2libsvm.py 
+ 1719  ls
+ 1720  #cp csvtovowpal.py csvt
+ 1721  cp csvtovowpal.py csvformatter.py
+ 1722  vim csvformatter.py 
+ 1723  #python csvtovowpal.py ~/sunil/carbadbuydata/trainingsmall.csv vwtrain.csv -c 2,4,5,6,7,8,9,11,13,14,15,24,25,28 -cns -t 8 -imp 3 -l 1 
+ 1724  vim csvformatter.py 
+ 1725  sudo apt-get install tmux
+ 1726  tmux
+ 1727  cd gitRepos/
+ 1728  ls
+ 1729  git clone https://github.com/3LOQ/Architecture.git
+ 1730  ls
+ 1731  cd ..
+ 1732  ls
+ 1733  cd sunil/
+ 1734  ls
+ 1735  cd hdfc/
+ 1736  ls
+ 1737  cd ..
+ 1738  ls
+ 1739  mkdir pythongraph
+ 1740  cd pythongraph/
+ 1741  ls
+ 1742  curl -O http://python-distribute.org/distribute_setup.py
+ 1743  ls
+ 1744  mkdir curl
+ 1745  cd curl/
+ 1746  curl -O http://python-distribute.org/distribute_setup.py
+ 1747  ls
+ 1748  cd ..
+ 1749  ls
+ 1750  unzip distribute-0.7.3.zip 
+ 1751  ls
+ 1752  tar -xvzf distribute-0.6.49.tar.gz 
+ 1753  ls
+ 1754  cd distribute-0.6.49/
+ 1755  ls
+ 1756  sudo python setup.py 
+ 1757  sudo python setup.py install
+ 1758  ls
+ 1759  cd ..
+ 1760  ls
+ 1761  easy_install
+ 1762  sudo easy_install python-graph-core
+ 1763  sudo easy_install python-graph-dot
+ 1764  ls
+ 1765  python
+ 1766  ls
+ 1767  cd ..
+ 1768  ls
+ 1769  cd hdfc/
+ 1770  ls
+ 1771  cd onezeros/
+ 1772  ls
+ 1773  tar -xvzf epcp1412.tgz 
+ 1774  ls
+ 1775  wc -l *
+ 1776  head epcp_1412_noid.csv 
+ 1777  sudo service hpcc-init start
+ 1778  ls
+ 1779  cp epcp_1412_noid.csv /var/lib/HPCCSystems/mydropzone/
+ 1780  head epcp_1412_noid.csv 
+ 1781  ls
+ 1782  cd ,,
+ 1783  cd ..
+ 1784  ls
+ 1785  vim codes
+ 1786  mkdir codes
+ 1787  cd codes/
+ 1788  ls
+ 1789  mkdir epcpgraph
+ 1790  cd epcpgraph/
+ 1791  ls
+ 1792  vim RecordDefinitions.ecl
+ 1793  vim changeformat.ecl
+ 1794  vim RecordDefinitions.ecl
+ 1795  vim changeformat.ecl
+ 1796  ks
+ 1797  ls
+ 1798  cd ..
+ 1799  ls
+ 1800  cd ..
+ 1801  ls
+ 1802  cd ..
+ 1803  ls
+ 1804  cd gitR
+ 1805  cd gitrepos/
+ 1806  ls
+ 1807  git clone https://github.com/networkx/networkx.git
+ 1808  ls
+ 1809  cd networkx/
+ 1810  ls
+ 1811  sudo python setup.py install
+ 1812  nosetests
+ 1813  python
+ 1814  ls
+ 1815  cd ..
+ 1816  ls
+ 1817  cd..
+ 1818  cd ..
+ 1819  cd hdfc/
+ 1820  ls
+ 1821  cd onezeros/
+ 1822  ls
+ 1823  cd ..
+ 1824  ls
+ 1825  cd codes/
+ 1826  ls
+ 1827  cd epcpgraph/
+ 1828  ls
+ 1829  vim make_graph.py
+ 1830  python make_graph.py 
+ 1831  vim make_graph.py
+ 1832  python make_graph.py 
+ 1833  vim make_graph.py
+ 1834  python make_graph.py 
+ 1835  vim make_graph.py
+ 1836  python make_graph.py 
+ 1837  vim make_graph.py
+ 1838  python make_graph.py 
+ 1839  vim make_graph.py
+ 1840  python make_graph.py 
+ 1841  vim make_graph.py
+ 1842  python make_graph.py 
+ 1843  vim make_graph.py
+ 1844  python make_graph.py 
+ 1845  vim make_graph.py
+ 1846  python make_graph.py 
+ 1847  vim make_graph.py
+ 1848  python make_graph.py 
+ 1849  vim make_graph.py
+ 1850  python make_graph.py 
+ 1851  vim make_graph.py
+ 1852  ls
+ 1853  python
+ 1854  cd sunil/
+ 1855  ls
+ 1856  cd hdfc/
+ 1857  cd da
+ 1858  cd onezeros/
+ 1859  ls
+ 1860  pwd
+ 1861  ls epcp
+ 1862  ls epcp_1412_noid.csv 
+ 1863  head epcp_1412_noid.csv 
+ 1864  python
+ 1865  head epcp_1412_noid.csv 
+ 1866  cd ..
+ 1867  ls
+ 1868  cd ..
+ 1869  ls
+ 1870  cd vowpal
+ 1871  ls
+ 1872  cd ..
+ 1873  ls
+ 1874  cd feb15/
+ 1875  ls
+ 1876  cd vowpaltest/
+ 1877  ls
+ 1878  cp samplecols.py ../../hdfc/codes/
+ 1879  cd ../../hdfc/codes/
+ 1880  ls
+ 1881  python samplecols.py ../onezeros/epcp_1412_noid.csv 
+ 1882  python samplecols.py -h
+ 1883  cp /home/loq/sunil/feb15/vowpaltest/headindex.py ..
+ 1884  cp /home/loq/sunil/feb15/vowpaltest/headindex.py ./
+ 1885  python samplecols.py -h
+ 1886  python samplecols.py ../onezeros/epcp_1412_noid.csv 
+ 1887  vim epcpgraph/make_graph.py
+ 1888  python epcpgraph/make_graph.py 
+ 1889  vim epcpgraph/make_graph.py
+ 1890  python epcpgraph/make_graph.py 
+ 1891  vim epcpgraph/make_graph.py
+ 1892  python epcpgraph/make_graph.py 
+ 1893  vim epcpgraph/make_graph.py
+ 1894  python epcpgraph/make_graph.py 
+ 1895  vim epcpgraph/make_graph.py
+ 1896  python epcpgraph/make_graph.py 
+ 1897  vim epcpgraph/make_graph.py
+ 1898  python epcpgraph/make_graph.py 
+ 1899  vim epcpgraph/make_graph.py
+ 1900  python epcpgraph/make_graph.py 
+ 1901  ls
+ 1902  python samplecols.py ../onezeros/epcp_1412_noid.csv 
+ 1903  ('EP_CA', 11984), ('CP_MB_USG', 15035), ('CP_PB_TAG', 18877), ('EP_HSL_FLG', 19637), ('EP_TD_TAG', 19787), ('EP_DEMAT_FLG', 22795), ('CP_CASA_ESTAT', 32676), ('CP_CC_ESTAT', 32689), ('CP_UTIL_PAY', 33236), ('EP_CC_REG', 37719), ('EP_INSTA_ALRT', 49779), ('CP_NB_USG', 58351), ('CP_ATM_TAG', 62520), ('EP_DC_CHRGD', 65835), ('EP_SA', 66993)
+ 1904  44,23,3,7,35,11,5,4,6,8
+ 1905  vim epcpgraph/make_graph.py
+ 1906  python samplecols.py ../onezeros/epcp_1412_noid.csv 
+ 1907  python epcpgraph/make_graph.py 
+ 1908  vim epcpgraph/make_graph.py
+ 1909  python epcpgraph/make_graph.py 
+ 1910  vim epcpgraph/make_graph.py
+ 1911  python epcpgraph/make_graph.py 
+ 1912  vim epcpgraph/make_graph.py
+ 1913  python epcpgraph/make_graph.py 
+ 1914  vim epcpgraph/make_graph.py
+ 1915  python epcpgraph/make_graph.py 
+ 1916  vim epcpgraph/make_graph.py
+ 1917  python epcpgraph/make_graph.py 
+ 1918  vim epcpgraph/make_graph.py
+ 1919  python epcpgraph/make_graph.py 
+ 1920  vim epcpgraph/make_graph.py
+ 1921  python epcpgraph/make_graph.py 
+ 1922  vim epcpgraph/make_graph.py
+ 1923  python epcpgraph/make_graph.py 
+ 1924  ls
+ 1925  vim epcpgraph/make_graph.py
+ 1926  cd epcpgraph/
+ 1927  ls
+ 1928  python make_graph.py 
+ 1929  vi make_graph.py 
+ 1930  python make_graph.py 
+ 1931  vi make_graph.py 
+ 1932  python make_graph.py > weights.csv
+ 1933  cd gitRepos/
+ 1934  git clone https://github.com/3LOQ/Automator.git
+ 1935  ls
+ 1936  cd temp/
+ 1937  ls
+ 1938  cd ..
+ 1939  ls
+ 1940  mkdir generateCode
+ 1941  cd generateCode/
+ 1942  ls
+ 1943  mv createJoin.py createECL.py
+ 1944  lsb_release -a
+ 1945  sudo apt-get update; sudo apt-get dist-upgrade
+ 1946  emacs -nw
+ 1947  ls
+ 1948  cd sunil/
+ 1949  ls
+ 1950  cd pythongraph/
+ 1951  ls
+ 1952  cd ..
+ 1953  ls
+ 1954  cd hdfc/
+ 1955  ls
+ 1956  cd codes/
+ 1957  ls
+ 1958  cd epcpgraph/
+ 1959  ls
+ 1960  cp make_graph.py page_sample.py
+ 1961  vim page_sample.py 
+ 1962  python page_sample.py 
+ 1963  vim page_sample.py 
+ 1964  python page_sample.py 
+ 1965  vim page_sample.py 
+ 1966  python page_sample.py 
+ 1967  vim page_sample.py 
+ 1968  python page_sample.py 
+ 1969  vim page_sample.py 
+ 1970  ls
+ 1971  vim page_sample.py 
+ 1972  python page_sample.py 
+ 1973  ls
+ 1974  vim make_graph.py 
+ 1975  python make_graph.py 
+ 1976  vim make_graph.py 
+ 1977  cd ..
+ 1978  cd feb15/vowpaltest/
+ 1979  ls
+ 1980  python
+ 1981  ls
+ 1982  python
+ 1983  cd /home/loq/sunil
+ 1984  vim 3_GenFinalRecomms.ecl 
+ 1985  history
+ 1986  ls
+ 1987  cd sunil/
+ 1988  l
+ 1989  ls
+ 1990  vw
+ 1991  ls
+ 1992  cd vowpal/
+ 1993  ls
+ 1994  cd ..
+ 1995  ls
+ 1996  cd feb15/
+ 1997  ls
+ 1998  cd vowpaltest/
+ 1999  ls
+ 2000  l
+ 2001  ls
+ 2002  cd sunil/
+ 2003  ls
+ 2004  cd gitrepos/
+ 2005  ls
+ 2006  cd sofia-ml-mod/
+ 2007  ls
+ 2008  less README.md 
+ 2009  ls
+ 2010  cd ..
+ 2011  ls
+ 2012  cd sofia-ml-read-only/
+ 2013  ls
+ 2014  cd sofia-ml/
+ 2015  ls
+ 2016  less README 
+ 2017  cds
+ 2018  ls
+ 2019  less README 
+ 2020  cd src/
+ 2021  ls
+ 2022  cd ..
+ 2023  ls
+ 2024  sofia-kmeans
+ 2025  cd ..
+ 2026  ls
+ 2027  cd sofia-ml-mod/
+ 2028  ls
+ 2029  cd sofia-ml/
+ 2030  ls
+ 2031  cd src/
+ 2032  ls
+ 2033  make
+ 2034  ls
+ 2035  ./sofia-ml 
+ 2036  ls
+ 2037  make clean
+ 2038  ls
+ 2039  make
+ 2040  ls
+ 2041  ./sofia-ml 
+ 2042  ls
+ 2043  cmd = "sofia-kmeans --k %s --init_type optimized_kmeans_pp --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file data/train.libsvm.txt --model_out data/model_sofia --dimensionality 9" % ( centers )
+ 2044  ls
+ 2045  cd ..
+ 2046  ls
+ 2047  cd ..
+ 2048  ls
+ 2049  cd ..
+ 2050  lcd ..
+ 2051  cd ..
+ 2052  ls
+ 2053  cd feb15/
+ 2054  ls
+ 2055  cd vowpaltest/
+ 2056  ls
+ 2057  head housingsmall.vw
+ 2058  ls
+ 2059  vim csv2libsvm.py 
+ 2060  ls *vw
+ 2061  head trainpl.vw 
+ 2062  ls
+ 2063  python selectcols.py trainpl.csv 
+ 2064  python selectcols.py -h
+ 2065  python samplecols.py -h
+ 2066  python samplecols.py trainpl.csv 
+ 2067  python csv2libsvm.py 
+ 2068  python csv2libsvm.py -h
+ 2069  python csv2libsvm.py trainpl.csv trainpl.lsvm -s
+ 2070  head -1 trainpl.lsvm 
+ 2071  python csv2libsvm.py trainpl.csv trainpl.lsvm -s -l=-1
+ 2072  vim csv2libsvm.py 
+ 2073  python csv2libsvm.py trainpl.csv trainpl.lsvm -s -l=-1
+ 2074  vim csv2libsvm.py 
+ 2075  python csv2libsvm.py trainpl.csv trainpl.lsvm -s -l=-1
+ 2076  head -1 trainpl.lsvm 
+ 2077  ls
+ 2078  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file trainpl.lsvm --model_out trainpl.cls
+ 2079  ../../gitrepos/sofia-ml-mod/sofia-ml/ -h
+ 2080  ../../gitrepos/sofia-ml-mod/sofia-ml -h
+ 2081  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml -h
+ 2082  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml -help
+ 2083  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file trainpl.lsvm --model_out trainpl.cls
+ 2084  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml -k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file trainpl.lsvm --model_out trainpl.cls
+ 2085  ../../gitrepos/sofia-ml-mod/sofia-ml/src/sofia-ml --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file trainpl.lsvm --model_out trainpl.cls
+ 2086  pwd
+ 2087  cd ..
+ 2088  cd gitrepos/sofia-ml-mod/sofia-ml/src/
+ 2089  ./sofia-ml --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file /home/loq/sunil/feb15/vowpaltest/trainpl.lsvm --model_out /home/loq/sunil/feb15/vowpaltest/trainpl.cls
+ 2090  cd ..
+ 2091  ls
+ 2092  cd demo/
+ 2093  ls
+ 2094  cd ..
+ 2095  cd src/
+ 2096  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 2097  # Should display the following.
+ 2098  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 2099  ls
+ 2100  ./sofia-ml --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 2101  cd ..
+ 2102  ls
+ 2103  cd sofia-ml/
+ 2104  ls
+ 2105  cd cluster-src/
+ 2106  ls
+ 2107  make
+ 2108  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 2109  ls
+ 2110  less Makefile 
+ 2111  cd ..
+ 2112  ls
+ 2113  cd ..
+ 2114  ls
+ 2115  cd ..
+ 2116  ls
+ 2117  cd sofia-ml-mod/
+ 2118  ls
+ 2119  cd sofia-ml/
+ 2120  ls
+ 2121  cd cluster-src/
+ 2122  ls
+ 2123  ./sofia-kmeans
+ 2124  chmod +777 sofia-kmeans
+ 2125  ./sofia-kmeans
+ 2126  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file demo/demo.train --model_out demo/clusters.txt
+ 2127  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file ../demo/demo.train --model_out ../demo/clusters.txt
+ 2128  head -2 ../demo/demo.train 
+ 2129  ls
+ 2130  ./sofia-kmeans --k 5 --init_type random --opt_type mini_batch_kmeans --mini_batch_size 100 --iterations 500 --objective_after_init --objective_after_training --training_file ~/sunil/feb15/vowpaltest/trainpl.lsvm --model_out ~/sunil/feb15/vowpaltest/trainpl.cls
+ 2131  head ~/sunil/feb15/vowpaltest/trainpl.cls 
+ 2132  head -1 ~/sunil/feb15/vowpaltest/trainpl.cls 
+ 2133  tail -1 ~/sunil/feb15/vowpaltest/trainpl.cls 
+ 2134  ls
+ 2135  head ../demo/clusters.txt 
+ 2136  head  ~/sunil/feb15/vowpaltest/trainpl.cls 
+ 2137  head -100  ~/sunil/feb15/vowpaltest/trainpl.cls 
+ 2138  ls
+ 2139  sofia-kmeans --model_in ~/sunil/feb15/vowpaltest/trainpl.lsvm --test_file ~/sunil/feb15/vowpaltest/testpl.lsvm --cluster_mapping_out ~/sunil/feb15/vowpaltest/trainpl.cls --cluster_mapping_type rbf_kernel --cluster_mapping_param 0.001
+ 2140  ./sofia-kmeans --model_in ~/sunil/feb15/vowpaltest/trainpl.lsvm --test_file ~/sunil/feb15/vowpaltest/testpl.lsvm --cluster_mapping_out ~/sunil/feb15/vowpaltest/trainpl.cls --cluster_mapping_type rbf_kernel --cluster_mapping_param 0.001
+ 2141  history
+ 2142  history > ~/sunil/feb15/vowpaltest/somehistorysofia1

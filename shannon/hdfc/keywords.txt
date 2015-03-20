@@ -1,0 +1,31 @@
+self match on all unknown transactions using edit distance.
+CC and not ccc
+bill
+insurance
+rail
+petrol
+mobile
+avenue
+cbdt
+emi
+loan
+insurance
+auto
+prepaid
+postpaid
+gl
+hous
+cess
+tax
+irctc
+pf
+provident
+dividend
+salary
+rent and not rental
+assurance
+life
+card
+gold
+mobile
+

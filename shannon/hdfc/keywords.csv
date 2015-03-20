@@ -1,0 +1,29 @@
+Keyword,Type,Association,selfmatchflag,spend category,Insurance Type,Loan Type
+self match on all unknown transactions using edit distance,same as before,,1,NA,NA,NA
+CC and not ccc,cc payment,,,NA,NA,NA
+rent and not rental,spend,,,rent,NA,NA
+bill,spend,,,billpay,NA,NA
+insurance,Investment,Insurance,,NA,NA,NA
+rail,Spend,,,travel,NA,NA
+petrol,petrol,,,NA,NA,NA
+mobile,Spend,,,mobile,NA,NA
+avenue,Spend,,,NA,NA,NA
+cbdt,tax,,,NA,NA,NA
+emi,EMI,Assests,,NA,NA,NA
+loan,Income/EMI,Assests,,NA,NA,NA
+auto,Income/EMI,Auto,,NA,NA,Auto
+prepaid,Spend,,,mobile,NA,NA
+postpaid,Spend,,,mobile,NA,NA
+gl,Income/EMI,Gold,,NA,NA,Gold
+housing,Income/EMI,House,,NA,NA,Housing
+cess,tax,,,NA,NA,NA
+tax,tax,,,NA,NA,NA
+irctc,Spend,,,travel,NA,NA
+pf,Investment,PF,,NA,NA,NA
+provident,Investment,PF,,NA,NA,NA
+dividend,Income,Stocks,,NA,NA,NA
+salary,Income,,,NA,NA,NA
+assurance,Investment,Insurance,,NA,NA,NA
+life,Investment,Insurance,,NA,Life,NA
+gold,Income/EMI,Gold,,NA,NA,Gold
+mobile,Spend,,,mobile,NA,NA

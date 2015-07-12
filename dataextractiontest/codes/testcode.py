@@ -22,10 +22,10 @@ def printNode(inp):
 newList=[]
 
 for num,node in enumerate(myjson):
-    if num>10000:
-        pass
-        #break
-    newList.append()
+    if num>1000:
+        #pass
+        break
+    newList.append(node)
 
 json.dump(newList,fout)
 fout.close()

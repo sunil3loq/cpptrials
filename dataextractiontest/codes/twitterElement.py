@@ -13,12 +13,15 @@ class twitterElement(object):
         self.youtubelinks=[]
         self.youtubeIds=[]
         self.youTubeVideos={}
+        self.debugFlag=True
         
     def validFeedOrNot(self):
         '''checks if the jsonElem is valid for searching a video or not'''
         returnBool=True
-        if 'entities' not in self.jsonElem and 'extended_entities' not in self.jsonElem:
+        if 'entities' not in self.jsonElem:
             returnBool=False
+        if self.debugFlag:
+            print 'validFeedOrNot returns',returnBool
         return returnBool
     
     def _getTwitterId(self):
@@ -33,8 +36,14 @@ class twitterElement(object):
         self.links=[]
         for urlElem in self.jsonElem['entities']['urls']:
             self.links.append(urlElem['expanded_url'])
-        for urlElem in self.jsonElem['extended_entities']['urls']:
-            self.links.append(urlElem['expanded_url'])
+        try:
+            for urlElem in self.jsonElem['extended_entities']['urls']:
+                self.links.append(urlElem['expanded_url'])
+        except KeyError:
+            pass
+            #print 'urls in extended_entities not found!!'
+        if self.debugFlag:
+            print 'links got are',self.links
     
     def _getYoutubeId(self,inpParsedUrl,longFormOrNot=True):
         '''takes in the parsed url to get the youtube ID of the video link'''
@@ -49,13 +58,15 @@ class twitterElement(object):
     
     def _youtubeOrNot(self,linkInput):
         '''returns True if the link is of a youtube'''
-        bitlyObject=bitlyurl(linkInput)
+        bitlyObject=bitlyurl.bitlyurl(linkInput)
         if bitlyObject.isBitly():
             linkInput=bitlyObject.expand()
         parsedTuple=urlparse.urlparse(linkInput)
-        if parsedTuple.hostname() in ['www.youtube.com','youtube.com']:
+        if self.debugFlag:
+            print parsedTuple.hostname
+        if parsedTuple.hostname in ['www.youtube.com','youtube.com']:
             return True,parsedTuple,True
-        elif parsedTuple.hostname() in ['www.youtu.be','youtu.be']:
+        elif parsedTuple.hostname in ['www.youtu.be','youtu.be']:
             return True,parsedTuple,False
         else:
             return False,parsedTuple,True
@@ -65,11 +76,14 @@ class twitterElement(object):
         self._getLinks()
         self.youtubeIds=[]
         self.youtubelinks=[]
-        for ytlink in self.youtubelinks:
+        for ytlink in self.links:
             youOrNot,parsedObj,longUrlOrNot = self._youtubeOrNot(ytlink)
             if youOrNot:
                 self.youtubelinks.append(ytlink)
                 self.youtubeIds.append(self._getYoutubeId(parsedObj, longUrlOrNot))
+        if self.debugFlag:
+            print 'youtube links are',self.youtubelinks
+            print 'youtube ids are',self.youtubeIds
         
     def returnYoutubeVideos(self):
         '''updates the youtubeIds and also removes non video links to youtube'''
@@ -81,6 +95,8 @@ class twitterElement(object):
                 ylink=self.youtubelinks[xnum]
                 self.youTubeVideos[ylink]={}
                 self.youTubeVideos[ylink]['id']=yid
-                self.youTubeVideos[ylink].update(youtubeLikes(yid).getStats())
+                self.youTubeVideos[ylink].update(youtubeLikes.youtubeLikes(yid).getStats())
+        if self.debugFlag:
+            print self.youTubeVideos
         return self.youTubeVideos
 

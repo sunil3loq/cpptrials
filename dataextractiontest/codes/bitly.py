@@ -63,6 +63,7 @@ class Api(object):
             if not '://' in url:
                 longURLs[index] = "http://" + url
             
+        #print longURLs
         request = self._getURL("shorten",longURLs,params)
         result = self._fetchUrl(request)
         json = simplejson.loads(result)
@@ -205,11 +206,12 @@ class Stats(object):
 
         
 if __name__ == '__main__':
-    testURL1="www.yahoo.com"
+    testURL1="www.youtube.com"
     testURL2="www.cnn.com"
     a=Api(login="pythonbitly",apikey="R_06871db6b7fd31a4242709acaf1b6648")
     short=a.shorten(testURL1)    
     print "Short URL = %s" % short
+    '''
     short=a.shorten(testURL1,{'history':1})    
     print "Short URL with history = %s" % short
     urlList=[testURL1,testURL2]
@@ -226,3 +228,4 @@ if __name__ == '__main__':
     testURL3=["www.google.com"]
     short=a.shorten(testURL3) 
     print "Short url in list = %s" % short
+    '''

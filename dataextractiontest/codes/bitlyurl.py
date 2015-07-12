@@ -30,9 +30,12 @@ class bitlyurl(object):
             return False
 
 if __name__=="__main__":
-    myUrl=bitlyurl('www.youtube.com')
+    myUrl=bitlyurl('https://www.youtube.com/watch?v=ntss2nfKnEc')
     print myUrl.isBitly()
-    print myUrl.shorten()
-    sUrl=bitlyurl('http://bit.ly/1Cwu2C7')
+    stemp=myUrl.shorten()
+    print stemp
+    #http://bit.ly/MegaTest
+    #http://bit.ly/1HUF9XL
+    sUrl=bitlyurl('http://bit.ly/1HUF9XL')
     print sUrl.isBitly()
     print sUrl.expand()

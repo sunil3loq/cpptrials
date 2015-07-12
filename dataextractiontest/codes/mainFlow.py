@@ -2,12 +2,15 @@
 import oauthtoken
 import json
 import twitterElement
+import pandas as pd
 
 debugFlag=False
 printNodeFlag=False
 
-dataloc='/root/sunil/pythontest/data/'
-resultsloc='/root/sunil/pythontest/results/'
+#dataloc='/root/sunil/pythontest/data/'
+#resultsloc='/root/sunil/pythontest/results/'
+dataloc='../data/'
+resultsloc='../results/'
 
 inpFileName='small_sample_tweets_data.json'
 outFileName='sorted_youtubevideos.csv'
@@ -16,7 +19,6 @@ tempFileName='non'+outFileName
 print 'here1'
 
 fin = open(dataloc+inpFileName)
-fout = open(resultsloc+outFileName,'w')
 ftemp = open(resultsloc+tempFileName,'w')
 
 try:
@@ -39,10 +41,16 @@ def printNode(inp):
     print json.dumps(inp,indent=4)
     print
 
+def csvDefinition():
+    headList=['youtubelink','twitterid','youtubeId','commentCount','viewCount',
+              'favoriteCount','dislikeCount','likeCount\n']
+    return ','.join(headList)
+
 def printCsvLine(fptr,inpDict):
     '''prints the csv line for the output of the twitterElement.returnYoutubeVideos'''
     for ylink,val in inpDict.iteritems():
         fptr.write(ylink+',')
+        fptr.write(str(val['twitterId'])+',')
         fptr.write(val['id']+',')
         fptr.write(val['commentCount']+',')
         fptr.write(val['viewCount']+',')
@@ -50,6 +58,7 @@ def printCsvLine(fptr,inpDict):
         fptr.write(val['dislikeCount']+',')
         fptr.write(val['likeCount']+'\n')
 
+ftemp.write(csvDefinition())
 for num,node in enumerate(myjson):
     if num!=110:
         pass
@@ -70,7 +79,13 @@ for num,node in enumerate(myjson):
         #printNode(node)
         raise
 ftemp.close()
-fout.close()
+
+pdFrame=pd.read_csv(resultsloc+tempFileName)
+
+pdFrame.sort(columns='likeCount',ascending=False,inplace=True)
+
+pdFrame.to_csv(resultsloc+outFileName,index=False)
+
 '''
 fout = open(dataloc+'samplekeys.csv','w')
 print 'final list is written to file' 

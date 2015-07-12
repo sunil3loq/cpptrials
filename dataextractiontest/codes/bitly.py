@@ -88,8 +88,11 @@ class Api(object):
         request = self._getURL("expand",shortURL,params)
         result = self._fetchUrl(request)
         json = simplejson.loads(result)
+        #print json
         self._CheckForError(json)
-        return json['results'][string.split(shortURL, '/')[-1]]['longUrl']
+        for elem,val in json['results'].iteritems():
+            return val['longUrl']
+        #return json['results'][string.split(shortURL, '/')[-1]]['longUrl']
 
     def info(self,shortURL,params={}):
         """ 

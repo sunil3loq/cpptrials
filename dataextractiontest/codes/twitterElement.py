@@ -13,7 +13,7 @@ class twitterElement(object):
         self.youtubelinks=[]
         self.youtubeIds=[]
         self.youTubeVideos={}
-        self.debugFlag=True
+        self.debugFlag=False
         
     def validFeedOrNot(self):
         '''checks if the jsonElem is valid for searching a video or not'''
@@ -95,6 +95,7 @@ class twitterElement(object):
                 ylink=self.youtubelinks[xnum]
                 self.youTubeVideos[ylink]={}
                 self.youTubeVideos[ylink]['id']=yid
+                self.youTubeVideos[ylink]['twitterId']=self._getTwitterId()
                 self.youTubeVideos[ylink].update(youtubeLikes.youtubeLikes(yid).getStats())
         if self.debugFlag:
             print self.youTubeVideos

@@ -17,6 +17,7 @@
 import urllib,urllib2
 import urlparse
 import string
+import time
 try:
    import simplejson
 except ImportError:
@@ -83,13 +84,25 @@ class Api(object):
         else:
             return item['shortKeywordUrl']
 
-    def expand(self,shortURL,params={}):
-        """ Given a bit.ly url or hash, return long source url """
-        request = self._getURL("expand",shortURL,params)
+    def expandJson(self,shortform,paramsdict={}):
+        request = self._getURL("expand",shortform,paramsdict)
         result = self._fetchUrl(request)
         json = simplejson.loads(result)
+        return json
+        
+    def expand(self,shortURL,params={}):
+        """ Given a bit.ly url or hash, return long source url """
+        json=self.expandJson(shortURL,params)
         #print json
-        self._CheckForError(json)
+        errorCode=json['errorCode']
+        while int(errorCode) == 403:
+            print json
+            print 'sleeping to query back bitly after 120s'
+            time.sleep(120)
+            json=self.expandJson(shortURL,params)
+            #print json
+            errorCode=json['errorCode']
+        #self._CheckForError(json)
         for elem,val in json['results'].iteritems():
             return val['longUrl']
         #return json['results'][string.split(shortURL, '/')[-1]]['longUrl']

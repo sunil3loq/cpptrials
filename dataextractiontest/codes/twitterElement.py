@@ -14,6 +14,7 @@ class twitterElement(object):
         self.youtubeIds=[]
         self.youTubeVideos={}
         self.debugFlag=False
+        self.bitlyExpansion=''
         
     def validFeedOrNot(self):
         '''checks if the jsonElem is valid for searching a video or not'''
@@ -61,16 +62,21 @@ class twitterElement(object):
         bitlyObject=bitlyurl.bitlyurl(linkInput)
         if bitlyObject.isBitly():
             linkInput=bitlyObject.expand()
+            self.bitlyExpansion=linkInput
         parsedTuple=urlparse.urlparse(linkInput)
         if self.debugFlag:
             print parsedTuple.hostname
-        if parsedTuple.hostname in ['www.youtube.com','youtube.com']:
+        if parsedTuple.hostname in ['www.youtube.com','youtube.com','www.m.youtube.com','m.youtube.com']:
             return True,parsedTuple,True
-        elif parsedTuple.hostname in ['www.youtu.be','youtu.be']:
+        elif parsedTuple.hostname in ['www.youtu.be','youtu.be','m.youtu.be','www.m.youtu.be']:
             return True,parsedTuple,False
         else:
             return False,parsedTuple,True
-    
+   
+    def getBitlyExpansion(self):
+        '''returns the bitly expansion of the url'''
+        return self.bitlyExpansion
+ 
     def _updateYoutubeIds(self):
         '''updates the youtube Ids for the youtube links'''
         self._getLinks()

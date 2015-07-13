@@ -11,7 +11,7 @@ class youtubeLikes(object):
     
     def __init__(self,inpId):
         self.videoId=inpId
-    
+        self.debugFlag=False
     def getStats(self):
         '''returns the dictionary of stats for the input video'''
         youtube = build(youtubeLikes.YOUTUBE_API_SERVICE_NAME, 
@@ -20,8 +20,13 @@ class youtubeLikes(object):
         video_response = youtube.videos().list(id=self.videoId,
                                                part='id, statistics'
                                                ).execute()
-        
-        return video_response['items'][0]['statistics']
+        if self.debugFlag:
+            print video_response
+        try:
+            return video_response['items'][0]['statistics']
+        except IndexError:
+            print 'stats not available for',self.videoId
+            return {'commentCount':'NA','viewCount':'NA','favoriteCount':'NA','dislikeCount':'NA','likeCount':'0'}
   
 if __name__ == "__main__":
 #https://www.youtube.com/watch?v=ntss2nfKnEc

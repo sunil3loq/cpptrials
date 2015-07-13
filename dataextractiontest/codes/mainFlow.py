@@ -7,13 +7,13 @@ import pandas as pd
 debugFlag=False
 printNodeFlag=False
 
-#dataloc='/root/sunil/pythontest/data/'
-#resultsloc='/root/sunil/pythontest/results/'
-dataloc='../data/'
-resultsloc='../results/'
+dataloc='/root/sunil/pythontest/data/'
+resultsloc='/root/sunil/pythontest/results/'
+#dataloc='../data/'
+#resultsloc='../results/'
 
-inpFileName='small_sample_tweets_data.json'
-outFileName='sorted_youtubevideos.csv'
+inpFileName='sample_tweets_data.json'
+outFileName='sorted_youtubevideos_dedup.csv'
 tempFileName='non'+outFileName
 
 print 'here1'
@@ -64,6 +64,7 @@ for num,node in enumerate(myjson):
         pass
         #continue
     #printNode(node)
+    #print 'num value is',num
     if debugFlag:
         print
         print 'num value is',num
@@ -82,9 +83,14 @@ ftemp.close()
 
 pdFrame=pd.read_csv(resultsloc+tempFileName)
 
-pdFrame.sort(columns='likeCount',ascending=False,inplace=True)
+def getMaxLikes(inpGroup):
+    return inpGroup.ix[inpGroup.likeCount.argmax()]
 
-pdFrame.to_csv(resultsloc+outFileName,index=False)
+chk=pdFrame.groupby('youtubeId').apply(getMaxLikes)
+
+chk.sort(columns='likeCount',ascending=False,inplace=True)
+
+chk.to_csv(resultsloc+outFileName,index=False)
 
 '''
 fout = open(dataloc+'samplekeys.csv','w')

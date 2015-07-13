@@ -10,6 +10,7 @@ class bitlyurl(object):
     
     userName,authKey=oauthtoken.getbitlyToken()
     bitlyApi=bitly.Api(login=userName,apikey=authKey)
+    bitlyUrls={}
     
     def __init__(self,inpUrl):
         '''intialisation'''
@@ -19,8 +20,19 @@ class bitlyurl(object):
         return bitlyurl.bitlyApi.shorten(self.inpUrl)
     
     def expand(self):
-        return bitlyurl.bitlyApi.expand(self.inpUrl)
-    
+        if self.inpUrl in self.bitlyUrls:
+            print 'getting bitly expansion from cache!'
+            return self.bitlyUrls[self.inpUrl]
+        else:
+            try:
+                expandedUrl=bitlyurl.bitlyApi.expand(self.inpUrl)
+                self.bitlyUrls[self.inpUrl]=expandedUrl
+                return expandedUrl
+            except:
+                #raise
+                print 'could not find bitly expansion for', self.inpUrl
+                return 'www.nonsens.com'
+
     def isBitly(self):
         '''returns True when the url is a bitly shortened form'''
         parsed=urlparse.urlparse(self.inpUrl)
@@ -38,4 +50,6 @@ if __name__=="__main__":
     #http://bit.ly/1HUF9XL
     sUrl=bitlyurl('http://bit.ly/1HUF9XL')
     print sUrl.isBitly()
+    print sUrl.expand()
+    sUrl=bitlyurl('http://bit.ly/1HUF9XL')
     print sUrl.expand()
